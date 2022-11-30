@@ -15,13 +15,7 @@ describe('helloWorld', function() {
 });
 
 describe('sayHello', function() {
-    it('should return the string "Hello" when executed', function() {
-        expect(sayHello('Kailan')).toBe('Hello Kailan' );
-    });
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
-    });
-    it("should never return 'undefined' when called", function () {
-        expect(sayHello()).not.toBe(undefined);
     });
 });
